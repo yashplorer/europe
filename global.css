@@ -1,0 +1,75 @@
+* {
+	font-family: San Francisco Display;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+
+h1 {
+	padding: 10px;
+	color: black;
+}
+
+h3 {
+	display: inline-block;
+}
+
+table {
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top: thin white dotted;
+}
+
+table td {
+	padding-right: 15px;
+	padding-bottom: 7px;
+}
+
+li.tripUnit {
+	width: 100;
+	background-color: #192B33;
+	padding: 20px 0;
+}
+
+li.tripUnit #content {
+	margin-left: 150px;
+	display: inline-block;
+	color: white;
+	position: relative;
+	padding: 10px;
+}
+li.tripUnit table {
+	display: block;
+}
+
+div#sidebar {
+	width: 100px;
+	position: absolute;
+	margin-top: -20px;
+}
+#vLine {
+	border-left: 6px solid white;
+	left: calc(50% - 2.5px);
+	position: absolute;
+	overflow: auto;
+	height: 100%;
+	z-index: 1;
+}
+#circle {
+	left: calc(50% - 15px);
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	background-image: url(img/loc.png);
+	background-size: cover;
+	position: absolute;
+	top: calc(50% - 15px);
+	z-index: 3;
+}
+#date {
+	top: calc(50% - 10px);
+	left: 75%;
+	position: absolute;
+}
