@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html ng-app="euro-app">
 	<head>
 		<title>Europe Trip</title>
@@ -33,7 +33,7 @@
 							<td width="110"ng-if="isThere(detail.time) && !(isArray(detail.time))">{{detail.time}}</td>
 							<td width="110"ng-if="!isThere(detail.time)"> </td>
 
-							<td align="right" width="55" ng-if="isThere(detail.amount)">{{detail.amount}}</td>
+							<td align="right" width="55" ng-if="isThere(detail.amount)">{{detail.amtStr}}</td>
 							<td align="right" width="55" ng-if="!isThere(detail.amount)"> </td>
 
 							<td width="82" ng-if="isThere(detail.link)">
@@ -45,6 +45,31 @@
 				</div>
 			</li>
 		</ul>
+		<div id="side">
+			<h2>Sidebar</h2>
+			<br>
+			<table width="100%">
+				<tbody>
+					<tr>
+						<td>Detail Costs</td>
+						<td align="right">{{parsePrice(detailCost(data))}}</td>
+					</tr>
+					<tr>
+						<td>Food Costs</td>
+						<td align="right">{{parsePrice(foodCost(data))}}</td>
+					</tr>
+					<tr>
+						<td>Extra Costs</td>
+						<td align="right">{{parsePrice(exCost(data))}}</td>
+					</tr>
+					<tr>
+						<td><b>Total Costs</b></td>
+						<td align="right"><b>{{parsePrice(totCost(data))}}</b></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<span>poop {{c}}</span>
 		<script type="text/javascript" src="js/postLoad.js"></script>
 	</body>
 </html>

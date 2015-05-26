@@ -15,21 +15,28 @@ h3 {
 	display: inline-block;
 }
 
-table {
+li.tripUnit table {
 	margin-top: 5px;
 	padding-top: 5px;
 	border-top: thin white dotted;
 }
 
-table td {
+li.tripUnit table td {
 	padding-right: 15px;
 	padding-bottom: 7px;
 }
 
 li.tripUnit {
-	width: 100;
-	background-color: #192B33;
+	width: 748px;
 	padding: 20px 0;
+}
+
+li.tripUnit:nth-child(odd){
+	background-color: #222;
+}
+
+li.tripUnit:nth-child(even){
+	background-color: #444;
 }
 
 li.tripUnit #content {
@@ -43,10 +50,28 @@ li.tripUnit table {
 	display: block;
 }
 
+div#side{
+	position: fixed;
+	left: 748px;
+	top: 0;
+	width: calc(100% - 748px);
+	height: 100vh;
+	background-color: #B21522;
+	z-index: 5;
+	display: inline-block;
+	max-width: 300px;
+	padding: 10px;
+}
+
+ul {
+	display: inline-block;
+}
+
 div#sidebar {
 	width: 100px;
 	position: absolute;
 	margin-top: -20px;
+	padding: 10px;
 }
 #vLine {
 	border-left: 6px solid white;

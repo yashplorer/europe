@@ -109,6 +109,10 @@ var days = [
 				"amount": 97,
 				"time": ["18:35","19:50"],
 				"link": "http://goo.gl/PLZTFH"
+			},{
+				"keyword": "Maverick City Lounge",
+				"amount": 61.91,
+				"link": "http://goo.gl/jzvRDZ"
 			}]
 	},
 	{
